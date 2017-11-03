@@ -1,0 +1,11 @@
+body {
+    padding: 70px;
+}
+
+.navbar-brand>img {
+    height: 35px;
+}
+
+#sitters img {
+    height: 150px;
+}

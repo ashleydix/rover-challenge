@@ -1,0 +1,48 @@
+doctype 5
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='vbvyas') 
+    link(rel="shortcut icon", type="image/x-icon", href="/img/favicon.ico")
+    link(href="/css/bootstrap.min.css", rel="stylesheet", media='screen')
+    link(href="/css/font-awesome.min.css", rel="stylesheet")    
+    link(href="/css/sweetalert.min.css", rel="stylesheet")    
+    link(rel='stylesheet', href='/css/app.css')
+    //
+       Le HTML5 shim, for IE6-8 support of HTML5 elements
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    script.
+      <!--
+      (function() {
+          if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) {
+              var msViewportStyle = document.createElement("style");
+              msViewportStyle.appendChild(
+                  document.createTextNode("@-ms-viewport{width:auto!important}")
+              );
+              document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+          }
+      })(); 
+    script(src="/js/jquery.min.js")
+    script(src="/js/vue.js")
+      //--> 
+    block extra_head        
+  body
+    div.navbar.navbar-default.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(alt='Rover' src='/img/rover-logo.png')
+
+    div.container
+      block content
+          
+    script(src="/js/bootstrap.min.js")
+    script(src="/js/sweetalert.min.js")

@@ -1,0 +1,28 @@
+{
+  "name": "interview-vbvyas",
+  "version": "0.0.1",
+  "description": "Rover.com was destroyed in a terrible Amazon and GitHub accident. Thankfully, no dogs were harmed, but we have to rebuild our site using data we retrieved from the Google search index. We'd like to:",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roverjobs/interview-vbvyas.git"
+  },
+  "author": "vbvyas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roverjobs/interview-vbvyas/issues"
+  },
+  "homepage": "https://github.com/roverjobs/interview-vbvyas#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "csvtojson": "^1.1.9",
+    "express": "^4.16.2",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.19.0",
+    "sqlite3": "^3.1.13"
+  }
+}

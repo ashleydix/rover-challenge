@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  .text-center
+    h1 Rover Sitters
+  #sitters
+    .row
+      .col-sm-4
+        form.form-horizontal
+          fieldset
+            .form-group
+              .col-sm-6
+                label Filter by ratings
+              .col-sm-6
+                select.form-control(v-model='filter')
+                    option 5
+                    option 4
+                    option 3
+                    option 2
+                    option 1
+    table.table.table-stripped.table-hover
+      tr
+        th
+        th Name
+        th Rating
+      tr.active(v-for='sitter in sitters', v-if='sitter.rank >= filter')
+        td
+          img.profile(:alt='sitter.user.name', :src='sitter.user.image')
+        td {{ sitter.user.name }}
+        td {{ sitter.rank }}
+  
+  script(src='/js/sitter.js')
